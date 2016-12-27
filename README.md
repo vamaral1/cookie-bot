@@ -2,7 +2,7 @@
 
 Project by Victor Amaral, Kevin Rowland, Sarah Azody
 
-![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/bot.jpg) 
+![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/bot.jpg =100x100) 
 
 A mobile robot controlled by an Arduino Uno and hand gestures using the Microsoft Kinect inspired by the [Cake Bot](https://www.codeproject.com/articles/672336/cakerobot-a-csharp-arduino-kinect-robot-that-follo).
 
@@ -26,13 +26,13 @@ For wireless communication, we use an RF Transmitter/Receiver pair.
 
 The RF Transmitter TWS-BS-3 operates at 3 V and transmits data using a 434MHz frequency. This transmitter is connected to an Arduino that is plugged into the computer in order to directly receive data from the Kinect to prepare to transmit. The pins are numbered 1-4 and are connected to ground, a digital pin on the Arduino configured as output, 3.3 V, and a wire antenna respectively. We use the Arduino VirtualWire library to actually transmit the data. The data is transmitted at 2400 bits per second.
 
-![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/receiver.jpg) 
+![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/receiver.png) 
 
 The RF Receiver RWS-371-6 operates at 5V and uses the 434 MHz frequency in order to communicate with the transmitter. We placed the receiver on the Arduino that controls the car. The job of the receiver is to gather the transmitted data and send it to the Arduino so it can write data to the motors. The pins are numbered 1-8 and are connected to: ground, a digital pin on the Arduino in output mode, nothing, 5.5 V, 5.5 V, ground, ground, and a wire antenna. Pin 3 is not connected to anything as we don’t need to use the Linear Out functionality from the receiver. 
 
-![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/transmitter.jpg) 
+![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/transmitter.png) 
 
-**Magician Chassis*
+**Magician Chassis**
 
 The chassis is a ROB-12866 ROHS robot platform. It features two gearmotors with 65mm wheels and a rear caster. The chassis plates are cut from acrylic with a variety of mounting holes which we use to place our Arduino and sensors. We bolted the two pre-cut platforms together, attached the motors and caster, and placed our Arduino and extended breadboard atop. We use a 9V battery to power the Arduino and Arduino output power to drive the motors.
 
