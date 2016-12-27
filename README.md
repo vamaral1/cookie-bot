@@ -2,7 +2,7 @@
 
 Project by Victor Amaral, Kevin Rowland, Sarah Azody
 
-<img src="bot.jpg" alt="Drawing" style="width: 100px;"/>
+<img src="/img/bot.jpg" style="width: 100px;"/>
 
 A mobile robot controlled by an Arduino Uno and hand gestures using the Microsoft Kinect inspired by the [Cake Bot](https://www.codeproject.com/articles/672336/cakerobot-a-csharp-arduino-kinect-robot-that-follo).
 
