@@ -2,7 +2,7 @@
 
 Project by Victor Amaral, Kevin Rowland, Sarah Azody
 
-![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/bot.jpg =100x100) 
+![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/bot.jpg | width=100) 
 
 A mobile robot controlled by an Arduino Uno and hand gestures using the Microsoft Kinect inspired by the [Cake Bot](https://www.codeproject.com/articles/672336/cakerobot-a-csharp-arduino-kinect-robot-that-follo).
 
@@ -26,11 +26,11 @@ For wireless communication, we use an RF Transmitter/Receiver pair.
 
 The RF Transmitter TWS-BS-3 operates at 3 V and transmits data using a 434MHz frequency. This transmitter is connected to an Arduino that is plugged into the computer in order to directly receive data from the Kinect to prepare to transmit. The pins are numbered 1-4 and are connected to ground, a digital pin on the Arduino configured as output, 3.3 V, and a wire antenna respectively. We use the Arduino VirtualWire library to actually transmit the data. The data is transmitted at 2400 bits per second.
 
-![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/receiver.png) 
+![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/transmitter.png) 
 
 The RF Receiver RWS-371-6 operates at 5V and uses the 434 MHz frequency in order to communicate with the transmitter. We placed the receiver on the Arduino that controls the car. The job of the receiver is to gather the transmitted data and send it to the Arduino so it can write data to the motors. The pins are numbered 1-8 and are connected to: ground, a digital pin on the Arduino in output mode, nothing, 5.5 V, 5.5 V, ground, ground, and a wire antenna. Pin 3 is not connected to anything as we don’t need to use the Linear Out functionality from the receiver. 
 
-![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/transmitter.png) 
+![Alt text](https://github.com/vamaral1/cookie-bot/blob/master/img/receiver.png) 
 
 **Magician Chassis**
 
